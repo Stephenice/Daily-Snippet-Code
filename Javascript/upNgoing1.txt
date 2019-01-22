@@ -1,0 +1,34 @@
+/*
+You Don't Know JS: Up & Going
+Practice 1: solution
+*/
+
+const TAX_RATE = 0.8;
+const PHONE_PRICE = 100;
+const ACCESSORY = 50;
+const SPENT_THRESHOLD = 600;
+
+var bank_balance = 800;
+var amount = 0;
+
+function TaxCal(amount){
+return amount * TAX_RATE;
+}
+
+function PriceFormat(amount){
+return "$" + amount.toFixed(2);
+}
+
+while(amount<bank_balance){
+
+amount= PHONE_PRICE+ amount;
+bank_balance = bank_balance- amount;
+if(amount<SPENT_THRESHOLD ){
+amount= ACCESSORY + amount;
+bank_balance = bank_balance- amount;
+}
+}
+
+amount= amount + TaxCal(amount);
+
+console.log(" Your purchase: " + PriceFormat(amount));
