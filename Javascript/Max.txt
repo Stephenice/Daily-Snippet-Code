@@ -1,0 +1,17 @@
+
+/* print out how many time the max number appear in the array */
+let arryA = [2,1,4,4,4,6];
+
+let maxN = Math.max(...arryA);
+
+let c = 0;
+
+for(let i=0; i < arryA.length; i++ ){
+if(arryA[i] == maxN){
+
+c += 1;
+}
+
+}
+
+console.log(c);
