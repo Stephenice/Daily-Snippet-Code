@@ -4,7 +4,8 @@
 
 let arryA = [3,3,4,4,5,5,6,6,6,8,8,9,0];
 let arryB = [];
-arryA.sort();
+// add sort() function compares two number
+arryA.sort(function(a,b){return a - b});
 for(let i=0; i< arryA.length; i++){
 if(arryB.indexOf(arryA[i]) === -1){
 let diff= arryA[i];
