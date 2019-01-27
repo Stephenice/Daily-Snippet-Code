@@ -1,0 +1,19 @@
+// Remove duplicates from array in Javascript
+
+/*loop each elememt in the array A to array B .. if array A element is not in array B push it to array B. */
+
+let arryA = [3,3,4,4,5,5,6,6,6,8,8,9,0];
+let arryB = [];
+arryA.sort();
+for(let i=0; i< arryA.length; i++){
+if(arryB.indexOf(arryA[i]) === -1){
+let diff= arryA[i];
+arryB.push(diff);
+}
+}
+
+console.log(arryB);
+
+
+
+
