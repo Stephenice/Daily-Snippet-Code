@@ -1,0 +1,23 @@
+// bubble sort javascript
+
+function swap(arrayA, first,second){
+  let temp=arrayA[first];
+    arrayA[first]=arrayA[second];
+    arrayA[second]=temp;
+}
+
+
+
+function bubbleSort(arrayA){
+let len = arrayA.length;
+let i, temp;
+for(i=0; i< len; i++){
+  for(let j=0 ; j<len-1; j++){
+  if (arrayA[j]> arrayA[j+1]){
+    swap(arrayA, j,j+1);
+}}}
+return arrayA;
+}
+
+
+console.log(bubbleSort([-1,5,1,0,9,9,5,10,4]));
