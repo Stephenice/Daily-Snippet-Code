@@ -1,0 +1,12 @@
+//function channing
+
+var i=0;
+
+function sum(n){
+  i += n;
+  return sum;
+}
+
+sum(2)(3)(10)(100);
+
+console.log(i);
