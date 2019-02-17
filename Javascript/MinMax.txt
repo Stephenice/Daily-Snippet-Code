@@ -1,0 +1,19 @@
+//finding the min and max in an array
+let a = [8,-1,0,4,16,98,39,1001,67,99];
+
+let maxNum = a[0];
+let minNum = a[0];
+let aLength= a.length;
+let i;
+
+for(i=0; i < aLength; i++){
+  if (minNum > a[i]){
+      minNum = a[i];
+      }
+  if (maxNum < a[i]){
+      maxNum = a[i];
+      }
+}
+
+console.log("The minimum number is :" + minNum);
+console.log("The maximum number is :" + maxNum);
