@@ -1,0 +1,14 @@
+// finding the middle number in an array
+
+let a = [45,56,89,21,3];
+let lenA = a.length;
+let middle =0;
+  if(lenA % 2 === 0){
+    middle = lenA/2;  
+  } else{
+    middle=(lenA-1)/2;
+  }
+  //if(lenA % 3 ===){}
+
+console.log(a[middle]);
+
